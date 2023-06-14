@@ -1,0 +1,259 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Righteous&display=swap');
+
+  /* font-family: 'Open Sans', sans-serif;
+font-family: 'Righteous', cursive; */
+/* Global tag */
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+    list-style: none;
+    color: #fff
+}
+
+html{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 376px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+    overflow-x: hidden;
+    background: rgb(0, 0, 15);
+    
+}
+img{
+   max-width: 100%; 
+}
+/* end of Global tag */
+
+
+/* my first container */
+.first_container{
+    width: 100%;
+}
+
+
+/* end of my first container */
+
+
+/* mobile nav */
+
+.Logo{
+    font-family: 'Righteous', cursive;
+    font-weight: 800;
+}
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.list_item{
+    text-align: center;
+    padding: 0;
+    width: 60%;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+}
+
+.item{
+    color: #000;
+    transition: 20ms ease-in-out
+}
+
+.item:hover{
+    color: aqua;
+}
+
+li{
+    padding: 5px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.burger div{
+    align-items: center;
+    height: 2px;
+    width: 30px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+  }
+
+/* end of nav */
+
+/* Second container */
+.second_container{
+    margin-top: 40px;
+}
+
+.intro_section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro{
+    color: orange;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0;
+    line-height: .9;
+    font-family: 'Righteous', cursive;
+}
+
+p{
+    font-size: 1.1rem;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    padding-bottom: 30px;
+}
+
+.name{
+    color: orange;
+    font-family: 'Righteous', cursive;
+}
+.btn{
+    padding: 8px 30px;
+    background-color: #000;
+    border-radius: 20px;
+    border: 1px solid orange;
+    margin-right: 10px;
+    color: orange;
+    transition: 200ms ease-in-out;
+}
+
+
+.btn:hover{
+    padding: 8px 30px;
+    background-color: orange;
+    border: 3px solid orange;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.fill{
+    margin-bottom: 30px;
+}
+
+.my_image{
+    max-width: 100%;
+    min-height: 50px;
+    border-radius: 100%;
+}
+/* end of my second container */
+
+/* third container */
+
+.third_container{
+    text-align: center;
+    width: 90%;
+    margin: 130px auto auto;
+}
+
+
+h2{
+    text-decoration: underline;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.airbnb{
+    text-align: left;
+    padding: 5px;
+}
+
+
+.D-jukebox{
+    text-align: left;
+    padding: 5px;
+}
+
+
+.grid{
+    max-height: 70%;
+    width: 100%;
+}
+/* end of third container */
+
+
+/* fourth container */
+.fourth_container{
+   
+    margin-top: 100px;
+    color: #fff;
+}
+
+
+.fourth{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+
+
+.fourth p{
+    font-family: 'Open Sans', sans-serif;;
+}
+
+
+/* end of fourth container */
+
+
+/* form template */
+.form{
+    margin: 100px auto;
+    text-align: center;
+    width: 70%;
+   
+}
+
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    outline: none;
+}
+
+
+input[type="button"]{
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #73047d;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.social2{
+    margin-top: 50px;
+}
+
+
+/* end of template */
+
+   
