@@ -7,4 +7,3 @@ $(".burger").click(function(){
 
     $(".burger").toggleClass("toggle");
   });
-

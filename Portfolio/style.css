@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Righteous&display=swap');
 
   /* font-family: 'Open Sans', sans-serif;
 font-family: 'Righteous', cursive; */
@@ -45,7 +45,15 @@ img{
 .first_container{
     width: 100%;
     position: fixed;
+    min-height: 15px;
+    background-color: #000;
 }
+
+.intro_section{
+    padding-top: 4rem;
+}
+
+
 /* end of my first container */
 
 
@@ -74,7 +82,7 @@ nav{
     padding: 0;
     width: 60%;
     margin-top: 50px;
-    background-color: #fff;
+    background-color: #000;
     border: 1px solid orange;
     border-radius: 10px;
     position: absolute;
@@ -84,7 +92,7 @@ nav{
 }
 
 .item{
-    color: #000;
+    color: #fff;
     transition: 20ms ease-in-out
 }
 
@@ -187,7 +195,7 @@ p{
 }
 
 .my_image{
-    max-width: 100%;
+    max-width: 40%;
     min-height: 50px;
     border-radius: 100%;
 }
@@ -517,11 +525,32 @@ svg path:hover{
 
 @media (min-width: 1029px){
 
+    .intro_section{
+        padding-top: 4rem;
+    }
+
+    .first_container{
+        width: 100%;
+        min-height: 15px;
+        background-color: #000;
+        position: fixed;
+    }
+
+    .blog_pics{
+        width: 30%;
+        
+    }
+
+    .blog_link{
+        display: block;
+    }
+
+
     .list_item{
         text-align: center;
         padding: 0;
-        width: 50%;
-       left: 73%;
+        width: 40%;
+        left: 60%;
        top: -22px;
        margin-top: 30px;
         display: flex;
@@ -559,6 +588,8 @@ svg path:hover{
         padding: 11px 0;
         margin: 0 auto;
         align-items: center;
+        background-color: #000;
+        
     }
     
        .My_Blogs{
