@@ -1,8 +1,8 @@
-
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Righteous&display=swap');
 
   /* font-family: 'Open Sans', sans-serif;
 font-family: 'Righteous', cursive; */
+
 /* Global tag */
 
 *{
@@ -27,6 +27,8 @@ body{
     font-size: 1.125rem;
     overflow-x: hidden;
     background: rgb(0, 0, 15);
+    max-width: 1029px;
+    margin: 0 auto;
     
 }
 img{
@@ -34,38 +36,51 @@ img{
 }
 /* end of Global tag */
 
+.show{
+    display: block;
+}
+
 
 /* my first container */
 .first_container{
     width: 100%;
+    position: fixed;
 }
-
-
 /* end of my first container */
 
 
 /* mobile nav */
-
 .Logo{
     font-family: 'Righteous', cursive;
     font-weight: 800;
+    color: #fff;
 }
+
 nav{
     width: 90%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     margin: 0 auto;
+    position: relative;
+}
+
+.hide{
+    display: none;
 }
 
 .list_item{
     text-align: center;
     padding: 0;
     width: 60%;
-    margin-top: 30px;
+    margin-top: 50px;
     background-color: #fff;
+    border: 1px solid orange;
     border-radius: 10px;
-    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all 0.5s ease;
 }
 
 .item{
@@ -74,7 +89,7 @@ nav{
 }
 
 .item:hover{
-    color: aqua;
+    color: orange;
 }
 
 li{
@@ -95,7 +110,7 @@ li{
 
 /* Second container */
 .second_container{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .intro_section{
@@ -112,6 +127,7 @@ h1{
     margin: 0;
     line-height: .9;
     font-family: 'Righteous', cursive;
+    color: #fff;
 }
 
 p{
@@ -119,6 +135,7 @@ p{
     margin: 0;
     font-family: 'Righteous', cursive;
     padding-bottom: 30px;
+    color: #fff;
 }
 
 .name{
@@ -129,7 +146,7 @@ p{
     padding: 8px 30px;
     background-color: #000;
     border-radius: 20px;
-    border: 1px solid orange;
+    border: 2px solid orange;
     margin-right: 10px;
     color: orange;
     transition: 200ms ease-in-out;
@@ -144,8 +161,29 @@ p{
     color: #fff;
 }
 
+.link{
+    display: flex;
+    width: 90%;
+}
+
+.contact_info p{
+    color: orange;
+}
+
+.contact_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    color: orange;
+}
+
 .fill{
     margin-bottom: 30px;
+}
+
+.aboutMe{
+    color: orange;
 }
 
 .my_image{
@@ -179,18 +217,57 @@ main{
 .airbnb{
     text-align: left;
     padding: 5px;
+    color: orange;
 }
 
 
 .D-jukebox{
     text-align: left;
     padding: 5px;
+    color: orange;
 }
 
 
+.AirBnB{
+    height: 200px;
+}
+
+.JukeBox{
+    height: 200px;
+}
+
 .grid{
-    max-height: 70%;
+    max-height: 50%;
     width: 100%;
+}
+
+.airbnb_link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.ReadMore{
+    font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+   display: block;
+   text-align: left;
+   padding-top: 5px;
+}
+
+.ReadMore:hover{
+    transform: scale(.95);
+    text-decoration: underline;
+}
+
+.content{
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    color: orange;
 }
 /* end of third container */
 
@@ -221,39 +298,370 @@ main{
 
 /* form template */
 .form{
-    margin: 100px auto;
-    text-align: center;
-    width: 70%;
-   
+    text-align: center;   
 }
 
 
-form input{
-    width: 100%;
-    padding: 7px;
-    border: none;
-    border: 1px solid grey;
-    border-radius: 6px;
+form{
+    width: 90%;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: 0 0 20px 0 #110;;
+    padding-bottom: 30px;
+}
+
+.input-field{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
     outline: none;
 }
 
-
-input[type="button"]{
-    width: 300px;
-    height: 35px;
+.form_btn{
     margin-top: 20px;
-    border: none;
-    background-color: #73047d;
-    color: #fff;
-    font-size: 18px;
 }
 
+
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
 
 .social2{
     margin-top: 50px;
 }
 
 
+.social_icon{
+    padding-right: 8px;
+}
+
+svg path{
+    fill: #fff;
+    transition: 100ms ease-in;
+}
+
+svg path:hover{
+    fill: orange;
+}
 /* end of template */
 
-   
+/* Blogs */
+
+.My_Blogs{
+    width: 90%;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.blogs{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    color: orange;
+}
+
+
+.blogs h3{
+    color: orange;
+}
+
+
+.blog_link{
+    color: #fff;
+}
+
+.blog_link:hover{
+    text-decoration: underline;
+}
+
+
+/* end of blogs */
+
+
+ul.list{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 30px auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+}
+
+
+/* breakpoints */
+
+@media (min-width: 672px) {
+
+
+   .intro_section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.test{
+    width: 100%;
+}
+
+
+
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+   .My_Blogs{
+    width: 90%;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+/* form template */
+.form{
+    text-align: center;
+    margin-top: 80px;
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: 0 0 20px 0 #110;;
+    padding-bottom: 30px;
+}
+
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.form_btn{
+    margin-top: 20px;
+}
+
+.first_container{
+    position: fixed;
+}
+
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+
+.social2{
+    margin-top: 50px;
+}
+
+
+ul.list{
+    display: flex;
+    width: 100%;
+    margin: 30px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_icon{
+    padding-right: 8px;
+}
+
+svg path{
+    fill: #fff;
+    transition: 100ms ease-in;
+}
+
+svg path:hover{
+    fill: orange;
+}
+/* end of template */
+
+
+.fourth{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+
+.third_container{
+    text-align: center;
+    width: 90%;
+    margin: 130px auto auto;
+}
+    
+}
+
+
+@media (min-width: 1029px){
+
+    .list_item{
+        text-align: center;
+        padding: 0;
+        width: 50%;
+       left: 73%;
+       top: -22px;
+       margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #000;
+         border: none;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .item{
+        color: #fff;
+    }
+
+
+    .intro_section{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .test{
+        width: 50%;
+    }
+    
+    nav{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        padding: 11px 0;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+       .My_Blogs{
+        width: 70%;
+        padding-top: 40px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /* form template */
+    .form{
+        text-align: center;
+    }
+    
+    form{
+        width: 90%;
+        margin: 0 auto;
+        background: transparent;
+        box-shadow: 0 0 20px 0 #110;;
+        padding-bottom: 30px;
+    }
+    
+    .input-field{
+        width: 600px;
+        height: 40px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid #777;
+        border-radius: 14px;
+        outline: none;
+    }
+    
+    .form_btn{
+        margin-top: 20px;
+    }
+    
+    
+    .textarea-field{
+        height: 150px;
+        padding-top: 10px;
+    }
+    
+    .social2{
+        margin-top: 50px;
+    }
+    
+    .social_icon{
+        padding-right: 8px;
+    }
+    
+    svg path{
+        fill: #fff;
+        transition: 100ms ease-in;
+    }
+    
+    svg path:hover{
+        fill: orange;
+    }
+    /* end of template */
+    
+    
+    .fourth{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+     
+    }
+    
+    .third_container{
+        text-align: center;
+        width: 90%;
+        margin: 130px auto auto;
+    }
+
+ul.list{
+        display: flex;
+        width: 90%;
+        margin: 30px auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.toggle .line2{
+opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px,-6px);
+}
+
+
+/* end of breakpoints */
